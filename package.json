@@ -1,0 +1,28 @@
+{
+    "name": "chess-tournament-betting",
+    "version": "1.0.0",
+    "description": "Commons Hub Chess Tournament Unofficial Betting App",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "next": "^14.0.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "pusher": "^5.1.2",
+      "pusher-js": "^8.4.0-rc2",
+      "@supabase/supabase-js": "^2.38.4",
+      "lucide-react": "^0.263.1"
+    },
+    "devDependencies": {
+      "eslint": "^8.56.0",
+      "eslint-config-next": "^14.0.4"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
