@@ -17,14 +17,10 @@ const ChessApp = dynamic(() => import('../components/ChessApp'), {
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Commons Hub Chess Tournament</title>
-        <meta name="description" content="Official Mycelial-Betting Network for Chess Tournaments" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <ChessApp />
-    </>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <h1>Hello World!</h1>
+      <p>If you can see this, Next.js routing is working.</p>
+      <p>Current time: {new Date().toISOString()}</p>
+    </div>
   )
 }
