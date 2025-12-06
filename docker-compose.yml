@@ -1,0 +1,16 @@
+services:
+  betting-app:
+    build: .
+    container_name: betting-app-prod
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.betting-app.rule=Host(`betting.jeffemmett.com`)"
+      - "traefik.http.routers.betting-app.entrypoints=web"
+      - "traefik.http.services.betting-app.loadbalancer.server.port=3000"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
